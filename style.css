@@ -1,0 +1,133 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: darkslategray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+h2 {
+    text-align: center;
+    padding-top: 50px;
+    color: white;
+}
+h4 {
+    text-align: center;
+    color: white;
+    font-size: 16px;
+}
+#score {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+#message {
+    padding-left: 0;
+}
+.gamebox {
+    width: 50%;
+    margin-left: 407px;
+    margin-top: 0px;
+}
+p, #message {
+    padding-left: 43px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+input {
+    background-size: cover;
+    height: 137px;
+    width: 143px;
+    border: 10px solid;
+    border-radius: 39px;
+    margin-bottom: 10px;
+    font-size: 0;
+}
+#rock {
+    background-image: url(rock.png);
+}
+#paper {
+    background-image: url(paper.png);
+}
+#scissors {
+    background-image: url(scissors.png);
+}
+.scissorsmargin {
+    margin-left: 140px;
+}
+.scissorsmargin p {
+    padding-left: 25px;
+}
+/* modal */
+.close {
+    margin-left: 0;    
+}
+.modal-title {
+    margin-left: 33%;
+}
+.winner {
+    text-align: center;
+    animation: blinkingText 1.2s infinite;
+}
+.modal-footer {
+    text-align: center;
+    display: inline;
+    margin-left: -50px;
+    border-top: 0;
+}
+/* animation */
+@keyframes blinkingText {
+    0% { color: black; }
+    49% { color: black; }
+    60% { color: transparent; }
+    99% { color: transparent; }
+    100% { color: black; }
+}
+/* responsivesness */
+@media(max-width: 320px) {
+    .gamebox {
+        margin-left: 0;
+    }
+    .row {
+        flex-wrap: nowrap;
+    }
+    .scissorsmargin {
+        margin-left: 54%;
+    }
+}
+@media(min-width: 321px) and (max-width: 424px) {
+    .gamebox {
+        margin-left: 16px;
+    }
+    .row {
+        flex-wrap: nowrap;
+    }
+    .scissorsmargin {
+        margin-left: 54%;
+    }
+}
+@media(min-width: 425px) and (max-width: 767px) {
+    .gamebox {
+        margin-left: 39px;
+    }
+    .row {
+        flex-wrap: nowrap;
+    }
+    .scissorsmargin {
+        margin-left: 54%;
+    }
+}
+@media(width: 768px) {
+    .gamebox {
+        margin-left: 200px;
+    }
+    .row {
+        flex-wrap: nowrap;
+    }
+    .scissorsmargin {
+        margin-left: 24%;
+    }
+}
